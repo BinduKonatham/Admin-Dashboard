@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <div class="container">
+    <h1>User Management</h1>
+   
+    <div class="search-bar">
+      <input type="text" id="searchInput" onkeyup="searchTable()" placeholder="Search for names">
+      <button class="search-icon" id="searchButton">Search</button>
+    </div>
+   
+    <table id="userTable" >
+      <thead>
+        <tr>
+          <th class="checkbox"><input type="checkbox" id="selectAll" onchange="highlightAllRows()"></th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Role</th>
+          <th>Actions</th>
+        </tr>
+        <tbody>
+        <tr>
+          <th class="checkbox"><input type="checkbox" id="selectAll" onchange="highlightAllRows()"></th>
+            <td> Nandini</td>
+            <td>nandini@gmail.com</td>
+            <td> Software tester</td>
+            <td>
+              <img src="delete.png" width="20px" height="20px" alt="" onclick="deleteRow(this)">
+              <img src="Edit-icon.png" width="20px" height="20px" alt="" onclick="editRow(this)">
+            </td>
+        </tr>
+        <tr>
+          <th class="checkbox"><input type="checkbox" id="selectAll" onchange="highlightAllRows()"></th>
+          <td>Bindu</td>
+          <td>bindu@gmail.com</td>
+          <td>Developer</td>
+          <td>
+            <img src="delete.png" width="20px" height="20px" alt="" onclick="deleteRow(this)">
+            <img src="Edit-icon.png" width="20px" height="20px" alt="" onclick="editRow(this)">
+          </td>
+      </tr>
+      <tr>
+        <th class="checkbox"><input type="checkbox" id="selectAll" onchange="highlightAllRows()"></th>
+        <td>Yamini</td>
+        <td>yamini@gmail.com</td>
+        <td>Data Analyst</td>
+        <td>
+          <img src="delete.png" width="20px" height="20px" alt="" onclick="deleteRow(this)">
+          <img src="Edit-icon.png" width="20px" height="20px" alt="" onclick="editRow(this)">
+        </td>
+    </tr>
+      </thead>
+      
+      
+      </tbody>
+    </table>
+    <script src="Script.js"></script>
+
+    <div class="pagination">
+      <button class="first-page" onclick="goToFirstRow()">First</button>
+      <button class="previous-page" onclick="goToPreviousRow()">Previous</button>
+      <span id="pageNumber"></span>
+      <button class="next-page" onclick="goToNextRow()">Next</button>
+      <button class="last-page" onclick="goToLastRow()">Last</button>
+    </div>
+    
+    <button onclick="submitForm()">Add Row</button>
+    <button onclick="deleteSelectedRows()">Delete Selected Rows</button>
+
+   
+  </div>
+</body>
+</html>

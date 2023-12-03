@@ -1,0 +1,92 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+   
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-image: url('bg.jpeg');
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-bar {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  #searchInput {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 200px;
+  }
+  
+  .search-icon {
+    padding: 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #111111;
+    text-align: left;
+  }
+  
+  .checkbox {
+    width: 5%;
+    border: 1px solid #111111;
+  }
+  
+  .actions {
+    width: 10%;
+    text-align: center;
+  }
+  
+  .edit, .delete, .save {
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .edit:hover, .delete:hover, .save:hover {
+    background-color: #ec86c5;
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  .pagination button:hover {
+    background-color: #857171;
+  }
+  .highlight {
+    background-color: #D5D8DC;
+}
+  
+img{
+  align-items: center;
+}
